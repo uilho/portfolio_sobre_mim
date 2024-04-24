@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root{
+--cor-prim:black;
+--cor-secun: #F6F6F6;
+--cor-terc: #DA70D6 ;
+--cor-rodP: #BA55D3;
+--cor-links: #ee83ee;
+--cor-links-clik: #800080;
+--cor-links-borda:#FF00FF;
+
+}
+
+*{
+    margin: 0 ;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-prim);
+    color:  var(--cor-secun);
+
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 5%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.cabecalho_link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.44rem ;
+    font-weight: 580;
+    color: var(--cor-terc);
+    text-decoration: none;
+}
+.cabecalho_link:hover{
+    transition: ease-in;
+    color: rgb(255, 255, 255);
+    
+}
+.img_hab{
+    height: 1em;
+}
+.img_proj{
+    height: 1em;
+}
+
+.apresentacao{
+    padding: 3% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:82px ;
+}
+
+.titulo-destaque {
+    color: var(--cor-terc) ;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.titulo{
+    font-size: 1.875rem;
+    font-family: 'Krona One', sans-serif;
+    color: #BA55D3;
+    
+}
+strong{
+    color: #F6F6F6;
+}
+.paragrafo{
+    font-size: 1.437rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.rede_social{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.subtitulo_links{
+    font-family: 'krona one', sans-serif;
+    font-weight: 340;
+    font-size: 1.5rem;
+}
+.rede_links{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    border: 2px solid var(--cor-links);
+    width: 350px;
+    text-align: center;
+    border-radius: 8px;  
+    font-size: 1.437rem;
+    font-weight:570;
+    padding: 5px;
+    text-decoration: 0;
+    color:var(--cor-secun);
+    font-family: 'Montserrat', sans-serif;
+}
+.rede_links:hover{
+    transition: ease-in;
+    font-size: 1.687rem;
+    background-color: var(--cor-links-clik);
+    color: rgb(255, 255, 255);
+    border: 3px solid var(--cor-links-borda) ;
+
+}
+
+.ft_proj{
+    width: 90%;
+    height: 290px;
+    display: flex;
+    gap: 60px;
+}
+
+.foto_projeto{
+    height: 100px; 
+}
+
+/* .logo_alura{
+    width: 290px;
+    filter: drop-shadow(10px 6px 9px purple);
+    top: 30%;
+    
+} */
+
+
+.txt-link{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.rodape{
+    padding: 4px;
+    color: var(--cor-secun);
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.187rem;
+    font-weight: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+}
+
+.rodape-alura {
+    display: flex;
+    align-self: center;
+    text-align: left;
+}
+.rodap{
+    border-color: var(--cor-links-clik);
+}
+
+@media (min-width: 768px){
+    .ft_proj img{
+        width: 13%;
+        height: 110%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        transition: all ease-out 0.5s;
+        cursor: pointer;
+    }
+    .ft_proj img:hover{
+        width: 100%;
+    }
+
+
+
+    .logo_alura{
+        width: 250px;
+        height: 250px;
+        position:absolute;
+        top: 7%;
+        left: 78%;
+        filter: drop-shadow(10px 6px 8px purple);
+        
+        
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    
+    .cabecalho {
+        padding: 5% 0% 0% 4%;
+        overflow: hidden;
+
+    }
+    .cabecalho_menu {
+        gap: 1.5rem;
+    }
+    .cabecalho_link{
+        gap: 10rem;
+    }
+    .txt-link img{
+        width: 1.2rem;
+    }
+    .txt-link span{
+        font-size: 1.1rem;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5% ;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+        height: 2060px;
+    }
+    .ft_proj{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        row-gap: 50px;
+        gap: 20px 40px;
+    }
+    .foto_projeto_1{
+        height: 198px; 
+    }
+    .foto_projeto_2{
+        height: 230px;
+        
+    }
+    .foto_projeto_3{
+        height: 220px;
+        width: 316px;
+    }
+    .foto_projeto_4{
+        height: 285px;
+    }
+    .foto_projeto_5{
+        height: 320px;
+        
+    }
+    .foto_projeto_6{
+        height: 200px;
+        width: 320px;
+    }
+    
+    .logo_alura{
+        width: 50px;
+        height: 50px;
+        position:absolute;
+        top: 7%;
+        left: 78%;
+        filter: drop-shadow(10px 6px 8px purple);
+    }
+
+}
